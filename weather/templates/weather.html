@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/favicon/apple-touch-icon.png ">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/favicon/favicon-32x32.png ">  
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon/favicon-16x16.png ">
+    <link rel="manifest" href="../static/favicon/site.webmanifest ">
+    <link rel="mask-icon" href="../static/favicon/safari-pinned-tab.svg " color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Weather Ninja</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/style.css ">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid justify-content-center">
+            <a class="navbar-brand" href="weather.html">
+                <img src="../static/logo.png " alt="Logo" class="navbar-logo">
+            </a>
+        </div>
+    </nav>
+
+    <main id="main">
+        <!-- Hero Section -->
+        <section id="hero" class="pb-5 d-flex align-items-center">
+            <div class="container">
+                <div class="row gx-md-5 flex-column-reverse flex-md-row">
+                    <div class="col-md-7 align-items-center d-flex">
+                        <div class="hero-inner">
+                            <h5 class="fw-bold head">Weather Ninja: Your Weather Station</h5>
+                            <h2 class="section-title display-6 fw-bold head-p">Predict, Protect, Prevent</h2>
+                            <p class="lead">Our weather monitoring system empowers you to Predict changes with accurate forecasts, Protect lives and assets through timely alerts, and Prevent damage by enabling proactive actions against severe weather conditions.</p>
+                            <a href="#current-weather" class="btn btn-outline-primary fw-bold rounded-pill">See Weather</a>
+                        </div>
+                    </div>
+                    <div class="col-md-5 align-items-center d-flex">
+                        <img id="hero-img" src="../static/weatherninja.svg " alt="Weather Ninja" class="img-fluid mb-5 mb-md-0">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Current Weather Data Card -->
+        <section id="current-weather" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Current Weather</h2>
+                <div class="card mx-auto text-white bg-primary" style="max-width: 400px;">
+                    <div class="card-header text-center">
+                        <h4 class="text-white ">Present Weather Conditions</h4>
+                    </div>
+                    <div class="card-body text-center">
+                        <p><strong>Temperature:</strong> 25°C</p>
+                        <p><strong>Humidity:</strong> 54%</p>
+                        <p><strong>Pressure:</strong> 132 hPa</p>
+                        <p><strong>Rain Detected:</strong> No </p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <small>Last Updated: 5 Pm</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weather Monitoring System Graph -->
+        <div class="container">
+            <h1>Weather Monitoring System</h1>
+
+            <div class="chart-container">
+                <canvas id="weatherChart"></canvas>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section id="about" class="bg-white py-5 my-4">
+            <div class="container">
+                <h2 class="section-title text-center display-5 mb-1 head-p">About Weather Ninja</h2>
+                <div class="row g-5">
+                    <div class="col-lg-7">
+                        <p class="about-desc mt-3 mb-5 fs-5 text-secondary para-p">Our system uses advanced algorithms and real-time data to provide accurate weather forecasts, helping you stay ahead of changing conditions. With timely alerts for severe weather, we help safeguard lives, infrastructure, and resources by enabling proactive safety measures.</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="about-card">
+                                    <h4 class="about-card-title">1. Advanced Analytics</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="about-card">
+                                    <h4 class="about-card-title">2. Real-time Updates</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 text-end">
+                        <img id="about-img" src="../static/about.png " class="img-fluid" alt="Weather Ninja">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQs Section -->
+        <section id="faq" class="py-5 my-5">
+            <div class="faq container">
+                <h2 class="head-p text-center">Frequently Asked Questions</h2>
+                <p class="para-p text-center">Below are some common questions about our weather monitoring system:</p>
+                <ul class="faq-list">
+                    <li class="faq-item">
+                        <div class="faq-question">
+                            What sensors are used in this weather monitoring system?
+                            <span class="plus-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>This system uses a DHT11 sensor for temperature and humidity, a rain sensor to detect rainfall, and a pressure sensor to monitor atmospheric pressure.</p>
+                        </div>
+                    </li>
+                    <li class="faq-item">
+                        <div class="faq-question">
+                            How accurate is the weather data collected?
+                            <span class="plus-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The system provides reasonably accurate readings. The DHT11 sensor has a temperature accuracy of ±2°C and humidity accuracy of ±5%, making it suitable for basic weather monitoring.</p>
+                        </div>
+                    </li>
+                    <li class="faq-item">
+                        <div class="faq-question">
+                            Can I view real-time weather updates?
+                            <span class="plus-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, the system is designed to provide real-time weather updates, allowing you to access current conditions such as temperature, humidity, rainfall, and pressure levels.</p>
+                        </div>
+                    </li>
+                    <li class="faq-item">
+                        <div class="faq-question">
+                            How is the data from the sensors stored and processed?
+                            <span class="plus-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The data collected from the sensors is processed by the Raspberry Pi and can be stored in a database for historical tracking or displayed on a dashboard for live monitoring.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="text-center text-white py-4">Made with ❤️ by Code Titans &copy;</div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Custom JS -->
+    <script src="../static/main.js "></script>
+    <script>
+           // Updated dummy weather data
+            var limitedWeatherData = {
+                labels: ['2024-09-01 10:00', '2024-09-01 11:00', '2024-09-01 12:00', '2024-09-01 13:00', '2024-09-01 14:00'],
+                datasets: [
+                    {
+                        label: 'Temperature (°C)',
+                        data: [25, 26, 27, 28, 29],
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                        borderWidth: 2,
+                        fill: true,
+                        tension: 0.4,
+                    },
+                    {
+                        label: 'Humidity (%)',
+                        data: [54, 55, 56, 57, 58],
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                        borderWidth: 2,
+                        fill: true,
+                        tension: 0.4,
+                    },
+                    {
+                        label: 'Pressure (hPa)',
+                        data: [1012, 1013, 1014, 1015, 1016],
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        borderWidth: 2,
+                        fill: true,
+                        tension: 0.4,
+                    },
+                    {
+                        label: 'Rain Detected (Yes/No)',
+                        data: [0, 1, 0, 0, 1], // 0 = No rain, 1 = Rain
+                        borderColor: 'rgba(153, 102, 255, 1)',
+                        backgroundColor: 'rgba(153, 102, 255, 0.2)',
+                        borderWidth: 2,
+                        fill: true,
+                        tension: 0.4,
+                    }
+                ]
+            };
+        
+            var ctx = document.getElementById('weatherChart').getContext('2d');
+            var weatherChart = new Chart(ctx, {
+                type: 'line',
+                data: limitedWeatherData,
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: false
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            labels: {
+                                color: 'black',
+                                font: {
+                                    size: 14
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        </script>
+</body>
+</html>
