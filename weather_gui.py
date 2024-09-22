@@ -25,17 +25,17 @@ ser = serial.Serial('/dev/serial0', 115200, timeout=1)
 django_server_url = "http://localhost:8000/weather_data/"
 
 # Twilio account details (replace these with your own Twilio credentials)
-account_sid = 'AC83afc1574e58a8393cc541901757186c'
-auth_token = 'd044028471470efca56e02c6dcc7eef5'
-twilio_phone_number = '+18482604772'
-to_phone_number = '+923232124377'
+account_sid = 'accountid'
+auth_token = 'authid'
+twilio_phone_number = 'twilio number'
+to_phone_number = 'recepient's number'
 
 # Email settings
 smtp_server = 'smtp.gmail.com'
 smtp_port = 587
-email_address = 'codetitans@aptechgdn.net'
-email_password = 'codetitans_techwiz'
-to_email = 'shayan2209e@aptechgdn.net'
+email_address = 'email'
+email_password = 'pass'
+to_email = 'recepient's email'
 
 class WeatherApp(QWidget):
     def __init__(self):
