@@ -16,8 +16,8 @@ py manage.py runserver
 
 ## Admin Credentials
 - Username: techwiz
-- Email: admin@codetitans.com
-- Password: abc@123456789
+- Email: codetitans@aptechgdn.net
+- Password: codetitans_tec- [Figma ProtoType](https://www.figma.com/proto/eog5uf4qzKnbrPt2z2ymgT/ViroShield?type=design&node-id=1-2&t=H7V3aKDiBSrUN3Sm-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design)hwiz
 
 ## 🔗 Routes
 
@@ -27,10 +27,9 @@ py manage.py runserver
 
 
 ## 🔗 Important Links
-- [Figma ProtoType](https://www.figma.com/proto/eog5uf4qzKnbrPt2z2ymgT/ViroShield?type=design&node-id=1-2&t=H7V3aKDiBSrUN3Sm-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design)
 - [Github Repo](https://github.com/CodeTitans2/IOT)
 
-## Team Behind ViroShield
+## Team Behind Weather Ninja
 
 | Student Id | Student Name |
 | ------------- | ------------- |
